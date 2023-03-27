@@ -1,0 +1,31 @@
+/* section{
+  position: absolute;
+width: 1512px;
+height: 825px;
+left: 0px;
+top: 119px;
+
+}
+
+.background-effect-container {
+  position: absolute;
+  width: 1512px;
+  height: 827px;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(18, 18, 18, 0) 0%,
+    rgba(34, 34, 34, 0.1896) 100%
+  );
+}
+
+.background-image {
+  position: absolute;
+  width: 1512px;
+  height: 825px;
+  left: 0px;
+  top: 0px;
+  background: url(${backgroundImage});
+} */
