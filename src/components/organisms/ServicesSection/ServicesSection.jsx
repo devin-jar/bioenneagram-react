@@ -1,7 +1,57 @@
+import { useState } from "react";
+import { services } from "../../../data";
+
+import "./ServicesSection.css";
+
 export const ServicesSection = () => {
+  // Estado para guardar la ruta de la imagen actual
+  const [currentImage, setCurrentImage] = useState(services[0].img);
+
+  // Función para actualizar la ruta de la imagen actual
+  const handleImageChange = (ruta) => {
+    setCurrentImage(ruta);
+  };
+
   return (
-    <section id={"services"}>
-      <div>ServicesSection</div>
+    <section id="services" className="services-section">
+      <h3 className="services-section__title">
+        ¿Listo para{" "}
+        <span className="services-section__title-highlight">Comenzar</span>?
+      </h3>
+      <div className="services-section__solution-information">
+        <div className="services-section__solution-cards-container">
+          {/* Renderizamos las tarjetas de producto */}
+          {services.map((card, index) => (
+            <div
+              key={index}
+              className={`services-section__card ${
+                currentImage === card.img
+                  ? "services-section__card--selected"
+                  : ""
+              }`}
+              data-imagen={card.img}
+              onClick={() => handleImageChange(card.img)}
+            >
+              <div className="services-section__card-information">
+                <div className="services-section__card-logo">
+                  <img src={card.logo} alt={card.logoDescription} />
+                </div>
+                <div className="services-section__card-detail">
+                  {card.detail}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="services-section__solution-cards-img">
+          <img
+            id="services-section__show-img"
+            src={currentImage}
+            alt="Imagen seleccionada"
+          />
+        </div>
+      </div>
     </section>
   );
 };

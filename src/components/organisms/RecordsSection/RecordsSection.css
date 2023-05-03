@@ -1,0 +1,18 @@
+
+.records-section {
+  /* Agrega estilos de margen, padding, color de fondo, etc. según tus necesidades */
+padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.records-section__title {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.records-section__title-highlight{
+  color: #0094b7;
+}

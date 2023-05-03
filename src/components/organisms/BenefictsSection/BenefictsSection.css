@@ -1,0 +1,72 @@
+
+.beneficts-section {
+  /* Agrega estilos de margen, padding, color de fondo, etc. según tus necesidades */
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.beneficts-section__title {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.beneficts-section__title-highlight{
+  color: #0094b7;
+}
+
+.beneficts-section__list {
+  /* Agrega estilos de margen, padding, estilo de lista, etc. según tus necesidades */
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 0;
+  list-style-type: none;
+  margin-top:  3.5rem;
+}
+
+.beneficts-section__item {
+ /* Agrega estilos de margen, padding, alineación, etc. según tus necesidades */
+ display: flex;
+ flex-direction: column; /* Cambia la dirección de los elementos a columna */
+ align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.beneficts-section__item em{
+  /* Agrega estilos de margen, padding, alineación, etc. según tus necesidades */
+  width: 120px;
+    height: 120px;
+    background-color: #0094B7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.beneficts-section__image {
+  /* Agrega estilos de tamaño, borde, margen, etc. según tus necesidades */
+  margin: 2rem;
+  transform: scale(0.5);
+}
+
+.beneficts-section__text {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  font-size: 18px;
+  color: #000;
+  margin-top: 10px; /* Agrega margen superior para separar el texto de la imagen */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+@media (min-width: 480px) {
+  
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}

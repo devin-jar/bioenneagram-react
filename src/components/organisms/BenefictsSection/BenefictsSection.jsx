@@ -1,17 +1,58 @@
 import { beneficts } from "../../../data/beneficts";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "./BenefictsSection.css";
+import "swiper/swiper-bundle.css";
 
 export const BenefictsSection = () => {
   return (
-    <section id="benefics">
-      <h3>Abrete a vivir esta experiencia</h3>
-      <ul className="">
-        {beneficts.map(({ img, benefict, imgDescription }) => (
-          <div key={benefict} className="">
-            <img src={img} alt={imgDescription} />
-            <span>{benefict}</span>
-          </div>
+    <section id="benefics" className="beneficts-section">
+      <h3 className="beneficts-section__title">
+        Abrete a{" "}
+        <span className="beneficts-section__title-highlight">Vivir</span> esta{" "}
+        <span className="beneficts-section__title-highlight">Experiencia</span>
+      </h3>
+      <Swiper
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        breakpoints={{
+          364: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+        }}
+        className="beneficts-section__list"
+      >
+        {beneficts.map(({ id, img, benefict, imgDescription }) => (
+          <SwiperSlide key={id}>
+            <div className="beneficts-section__item">
+              <em>
+                <img
+                  src={img}
+                  alt={imgDescription}
+                  className="beneficts-section__image"
+                />
+              </em>
+              <p className="beneficts-section__text">
+                {benefict.slice(0, 2)}
+                <br />
+                {benefict.slice(3)}
+              </p>
+            </div>
+          </SwiperSlide>
         ))}
-      </ul>
+      </Swiper>
     </section>
   );
 };

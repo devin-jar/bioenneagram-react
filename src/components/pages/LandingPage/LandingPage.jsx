@@ -7,6 +7,7 @@ import {
   ServicesSection,
   RecordsSection,
   TestimonialsSection,
+  ContactSection,
 } from "../../organisms";
 import { sections } from "../../../data";
 
@@ -23,6 +24,7 @@ export const LandingPage = () => {
         <AboutMeSection />
         <RecordsSection />
         <TestimonialsSection />
+        <ContactSection />
       </main>
       <footer>
         <FooterSection />

@@ -34,9 +34,12 @@ export const HeaderSection = ({ sections }) => {
             className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
             id="navbarNav"
           >
-            <ul className="navbar-nav ms-auto">
+            <ul className="main-nav navbar-nav ms-auto">
               {sections.map((section) => (
-                <li className="nav-item item-navbar " key={section.section}>
+                <li
+                  className="main-nav__item nav-item item-navbar "
+                  key={section.section}
+                >
                   <a className="nav-link " href={`#${section.sectionId}`}>
                     {section.section}
                   </a>

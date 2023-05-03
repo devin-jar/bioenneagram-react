@@ -1,0 +1,116 @@
+
+.testimonials-section {
+  /* Agrega estilos de margen, padding, color de fondo, etc. según tus necesidades */
+ padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.testimonials-section__title {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.testimonials-section__title-highlight{
+  color: #0094b7;
+}
+
+
+.swiper-button-next, .swiper-button-prev{
+  background-color: #000;
+}
+
+.testimonials-section__cards-container {
+  /* Estilos para el contenedor de las cards de testimonios */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinear elementos en la parte superior */
+  flex-wrap: nowrap; /* Envolver a los elementos en caso de que haya muchos */
+  margin: 20px;
+  margin-top: 84px;
+}
+
+.testimonials-section__card {
+  /* Estilos para cada card de testimonio */
+  width: calc(33.3333% - 1rem); /* Ancho del 33.3333% con margen derecho de 1rem */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  margin-right: 18px;
+  border-radius: 1rem;
+}
+
+.testimonials-section__quote-container {
+  /* Estilos para el contenedor del quote */
+  padding: 1rem;
+  position: relative; /* Posición relativa para posicionar la barra lateral */
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.testimonials-section__quote-bar {
+  /* Estilos para la barra lateral del quote */
+  background-color: black; /* Color de fondo de la barra lateral */
+  width: 4px; /* Ancho de la barra lateral */
+  height: -webkit-fill-available; /* Altura de la barra lateral al 100% para cubrir todo el contenedor */
+  position: absolute; /* Posición absoluta para que la barra lateral esté dentro del contenedor */
+  left: 1rem; /* Posición a la izquierda del contenedor */
+  top: 0; /* Posición en la parte superior del contenedor */
+  z-index: 1; /* Agregar un índice de apilamiento para asegurarse de que esté por encima del contenido del quote */
+}
+
+.testimonials-section__quote {
+  /* Estilos para el quote del cliente */
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  padding-left: 1rem; /* Agregar espacio a la izquierda para separarlo de la barra lateral */
+}
+
+.testimonials-section__content-container {
+  /* Estilos para el contenedor del contenido */
+  display: flex;
+  align-items: center; /* Alinear elementos verticalmente en el centro */
+  padding: 1rem;
+  position: relative; /* Posición relativa para poder posicionar el contenido debajo del quote */
+  z-index: 2; /* Agregar un índice de apilamiento para asegurarse de que esté por encima de la barra lateral del quote */
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.testimonials-section__image-container {
+  /* Estilos para el contenedor de la imagen */
+  margin-right: 1rem; /* Agregar margen derecho para separarlo del contenido de texto */
+}
+
+.testimonials-section__image {
+  /* Estilos para la imagen del cliente */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Darle forma de círculo a la imagen */
+  overflow: hidden; /* Ocultar cualquier contenido que supere el límite del círculo */
+}
+
+.testimonials-section__image img {
+  /* Estilos para la imagen dentro del contenedor */
+  width: 100%; /* Asegurarse de que la imagen ocupe todo el espacio del contenedor */
+  height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+}
+
+
+.testimonials-section__text-container {
+  /* Estilos para el contenedor del texto */
+}
+
+.testimonials-section__brain {
+  /* Estilos para el nombre del cliente */
+  margin: 0;
+  font-size: 14px;
+}
+
+.testimonials-section__name {
+  /* Estilos para el nombre del cliente */
+  margin: 0;
+}

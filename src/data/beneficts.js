@@ -1,29 +1,40 @@
-import { logoAlex } from "../assets/icons";
+import {
+  iconAcequible,
+  iconDesarrollo,
+  iconEficaz,
+  iconProfesional,
+  iconTranquilo,
+} from "../assets/icons";
 
 export const beneficts = [
   {
+    id: 1,
     benefict: "Es Acequible",
-    img: logoAlex,
-    imgDescription: "hola",
+    img: iconAcequible,
+    imgDescription: "acequible",
   },
   {
+    id: 2,
     benefict: "Es Eficaz",
-    img: logoAlex,
-    imgDescription: "hola",
+    img: iconEficaz,
+    imgDescription: "eficaz",
   },
   {
+    id: 3,
     benefict: "Es Profesional",
-    img: logoAlex,
-    imgDescription: "hola",
+    img: iconProfesional,
+    imgDescription: "profesional",
   },
   {
+    id: 4,
     benefict: "Es Tranquilo",
-    img: logoAlex,
-    imgDescription: "hola",
+    img: iconTranquilo,
+    imgDescription: "tranquilo",
   },
   {
-    benefict: "Es Crecimiento",
-    img: logoAlex,
-    imgDescription: "hola",
+    id: 5,
+    benefict: "Es Desarrollo",
+    img: iconDesarrollo,
+    imgDescription: "desarrollo",
   },
 ];

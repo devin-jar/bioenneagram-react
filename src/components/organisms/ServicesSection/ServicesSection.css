@@ -1,0 +1,133 @@
+
+.services-section {
+  /* Agrega estilos de margen, padding, color de fondo, etc. según tus necesidades */
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.services-section__title {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.services-section__title-highlight{
+  color: #0094b7;
+}
+
+/* -- ====================SOLUTIONS================== -- */
+
+
+.services-section__solution-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 62px;
+  gap: 50px;
+  
+}
+
+.services-section__subtitle{
+  
+  height: 54px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.services-section__subtitle span{
+  color: #0094B7;
+}
+
+.services-section__solution-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  height: 614px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.services-section__solution-cards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
+
+  width: 22rem;
+  height: 614px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.services-section__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 45px;
+  height: 125px;
+  background-color: #dadbdd;
+  border-radius: 10px;
+  cursor: pointer;
+  
+	transition: all 0.2s ease-in-out;
+
+}
+
+.services-section__card.services-section__card--selected {
+  background-color: #4A74B1;
+}
+
+.services-section__solution-cards-img{
+  width: 570px;
+  height: 570px;
+  border-radius: 20px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.services-section__solution-cards-img img{
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .services-section__solution-cards-img{
+    display: none;
+  } 
+}
+
+@media (min-width: 480px) {
+  .services-section__solution-cards-container{
+    width: 26rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-section__solution-cards-container{
+    width: 32rem;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+
+}

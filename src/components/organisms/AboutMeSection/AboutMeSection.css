@@ -1,0 +1,48 @@
+.about-me-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.about-me-section__image {
+  flex: 1;
+}
+
+.about-me-section__image img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+
+}
+
+.about-me-section__content {
+  display: flex;  
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 2;
+  padding-left: 20px;
+}
+
+.about-me-section__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.about-me-section__title-highlight {
+  color: #0094b7;
+}
+
+.about-me-section__description {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+}
+
+.about-me-section__btn {
+  /* Agrega estilos para el botón según tus necesidades */
+}

@@ -1,0 +1,31 @@
+/* FooterSection.css */
+
+/* Estilos para el contenido del footer */
+.footer-section__content {
+  display: flex; /* Cambiado a 'display: flex' para alinear elementos en línea */
+  justify-content: space-between; /* Centrar elementos horizontalmente */
+}
+
+.footer-section__title{
+}
+
+.footer-section__cta{
+
+}
+
+/* Estilos para las imágenes de las redes sociales */
+.footer-section__social-networks {
+  display: flex; /* Mostrar las imágenes en una línea horizontal */
+  justify-content: flex-end; /* Alinear las imágenes a la derecha */
+  align-items: center; /* Centrar las imágenes verticalmente */
+  list-style-type: none;
+}
+
+.footer-section__social-networks-item {
+  margin: 0 5px; /* Reducido el margen horizontal entre las imágenes a 5px */
+}
+
+.footer-section__social-networks-image {
+  width: 30px; /* Cambiar el tamaño de las imágenes a 30px */
+  height: 30px;
+}
