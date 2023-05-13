@@ -4,13 +4,36 @@
 .footer-section__content {
   display: flex; /* Cambiado a 'display: flex' para alinear elementos en línea */
   justify-content: space-between; /* Centrar elementos horizontalmente */
+  flex-wrap: wrap;
+
+  padding: 2rem;
 }
 
 .footer-section__title{
+  text-align: left;
+  max-width: 35rem;
 }
 
 .footer-section__cta{
+  margin-right: 2.5rem;
+  display: flex;
+  align-items: center;
+}
 
+.footer-section__logo{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section__logo-copyright{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer-section__content-social-network {
+  display: flex; /* Cambiado a 'display: flex' para alinear elementos en línea */
+  justify-content: space-between; /* Centrar elementos horizontalmente */
+  margin: 1rem;
 }
 
 /* Estilos para las imágenes de las redes sociales */
@@ -19,6 +42,7 @@
   justify-content: flex-end; /* Alinear las imágenes a la derecha */
   align-items: center; /* Centrar las imágenes verticalmente */
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .footer-section__social-networks-item {
@@ -29,3 +53,33 @@
   width: 30px; /* Cambiar el tamaño de las imágenes a 30px */
   height: 30px;
 }
+
+
+@media (max-width: 480px) {
+  .footer-section__content {
+    justify-content: center;
+    align-content: space-between;
+  } 
+
+  .footer-section__cta {
+    margin-top: 1.5rem;
+  }
+}
+
+/* @media (min-width: 480px) {
+  .services-section__solution-cards-container{
+    width: 26rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-section__solution-cards-container{
+    width: 32rem;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+
+} */

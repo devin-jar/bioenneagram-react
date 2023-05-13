@@ -1,4 +1,9 @@
-import { imgBackgroundMain } from "../../../assets/images";
+import {
+  imgBackgroundMainBig,
+  imgBackgroundMainMedium,
+  imgBackgroundMainSmall,
+} from "../../../assets/images";
+import { Button } from "../../atoms/Button";
 
 import "./MainSection.css";
 
@@ -6,11 +11,15 @@ export const MainSection = () => {
   return (
     <section id="main" className="main-section">
       <figure className="main__image">
-        <img
-          src={imgBackgroundMain}
-          alt="Fondo Principal"
-          className="background-image img-fluid"
-        />
+        <picture>
+          <source srcSet={imgBackgroundMainBig} media="(min-width: 1024px)" />
+          <source srcSet={imgBackgroundMainMedium} media="(min-width: 600px)" />
+          <img
+            src={imgBackgroundMainSmall}
+            alt="Fondo Principal"
+            className="background-image img-fluid"
+          />
+        </picture>
       </figure>
 
       <div className="main-section__content">

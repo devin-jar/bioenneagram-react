@@ -16,3 +16,21 @@ padding: 20px;
 .records-section__title-highlight{
   color: #0094b7;
 }
+
+.records-section__card{
+  
+  margin: 2rem;
+  margin-top: 3.5rem;
+}
+
+.records-section__content-container {
+  background-color: white;
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5%;
+}
+

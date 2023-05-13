@@ -15,7 +15,7 @@ export const RecordsSection = () => {
         Imperdibles
       </h3>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={16}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}

@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import { logoAlex } from "../../../assets/icons";
 
+import "./HeaderSection.css";
+
 export const HeaderSection = ({ sections }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -10,7 +12,7 @@ export const HeaderSection = ({ sections }) => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-container">
         <div className="container">
           {/* TODO: Hacer Componente del logo*/}
           <div className="logo">

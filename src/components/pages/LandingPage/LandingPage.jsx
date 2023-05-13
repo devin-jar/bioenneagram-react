@@ -14,7 +14,7 @@ import { sections } from "../../../data";
 export const LandingPage = () => {
   return (
     <>
-      <header className="sticky-top">
+      <header>
         <HeaderSection sections={sections} />
       </header>
       <main>

@@ -11,6 +11,7 @@
   font-weight: bold;
   color: #000;
   text-align: center;
+  font-weight: bold;
 }
 
 .testimonials-section__title-highlight{
@@ -19,7 +20,6 @@
 
 
 .swiper-button-next, .swiper-button-prev{
-  background-color: #000;
 }
 
 .testimonials-section__cards-container {
@@ -28,8 +28,8 @@
   justify-content: space-between;
   align-items: flex-start; /* Alinear elementos en la parte superior */
   flex-wrap: nowrap; /* Envolver a los elementos en caso de que haya muchos */
-  margin: 20px;
-  margin-top: 84px;
+  margin: 1rem;
+  margin-top: 3.5rem;
 }
 
 .testimonials-section__card {
