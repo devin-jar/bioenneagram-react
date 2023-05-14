@@ -26,7 +26,7 @@ export const MainSection = () => {
         <h1 className="main-section__title">
           Listo para descubrir los secretos de tu personalidad
         </h1>
-        <h5 className="main-section__subtitle">Crecimiento Personal</h5>
+        <h6 className="main-section__subtitle">Crecimiento Personal</h6>
         <p className="main-section__description">
           Descubre tus fortalezas, debilidades y como mejorar tus relaciones
           personales
@@ -37,6 +37,7 @@ export const MainSection = () => {
           </a>
         </div>
       </div>
+      <div className="main-section__background"></div>
     </section>
   );
 };

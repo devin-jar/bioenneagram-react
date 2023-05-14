@@ -46,7 +46,7 @@
 
 .services-section__solution-information{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem;
@@ -130,13 +130,17 @@
 @media (min-width: 480px) {
   .services-section__solution-cards-container{
     width: 26rem;
-    margin-right: 4rem;
   }
 }
 
 @media (min-width: 768px) {
   .services-section__solution-cards-container{
     width: 32rem;
+    margin-right: 4rem;
+  }
+
+  .services-section__solution-information{
+    flex-direction: row;
   }
   
 }

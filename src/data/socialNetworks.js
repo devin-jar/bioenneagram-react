@@ -3,7 +3,6 @@ import {
   iconInstagram,
   iconTwitter,
   iconWhatsApp,
-  logoAlex,
 } from "../assets/icons";
 
 export const socialNetworks = [
