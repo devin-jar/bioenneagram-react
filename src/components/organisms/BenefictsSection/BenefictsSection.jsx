@@ -7,7 +7,7 @@ import "swiper/swiper-bundle.css";
 
 export const BenefictsSection = () => {
   return (
-    <section id="benefics" className="beneficts-section">
+    <section id="beneficts" className="beneficts-section">
       <h3 className="beneficts-section__title">
         Abrete a{" "}
         <span className="beneficts-section__title-highlight">Vivir</span> esta{" "}
