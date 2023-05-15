@@ -14,14 +14,20 @@ export const AboutMeSection = () => {
           <span className="about-me-section__title-highlight">Mí</span>
         </h3>
         <p className="about-me-section__description">
-          Profesor de Eneagrama en Cil, aires de cambio, UdeM, Participé en el
-          día internacional de Eneagrama con una ponencia En el seminario
-          internacional Damaryz España Webinar asociación colombiana de
-          Eneagrama.
+          Profesor de Eneagrama en la <span>CIL</span> y{" "}
+          <span>Aires de Cambio</span>, también fuí profesor en la
+          especialización de alta gerencia en <span>UdeM</span>. Participé en el
+          día internacional del Eneagrama en 2020, como una ponencia en el
+          seminario internacional del Eneagrama, con la{" "}
+          <span>Asociación Colombiana de Eneagrama</span>.
         </p>
-        <button className="about-me-section__btn btn btn-primary">
-          Leer Mas
-        </button>
+        <a
+          href="https://api.whatsapp.com/send/?phone=573004481819&text=Hola%2C+me+gustar%C3%ADa+agendar+un+espacio+contigo&type=phone_number&app_absent=0"
+          target="_blank"
+          className="about-me-section__btn btn btn-primary"
+        >
+          Escribeme
+        </a>
       </div>
     </section>
   );

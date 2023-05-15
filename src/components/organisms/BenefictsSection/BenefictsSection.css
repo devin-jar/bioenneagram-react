@@ -3,6 +3,7 @@
   /* Agrega estilos de margen, padding, color de fondo, etc. según tus necesidades */
   padding: 20px;
   background-color: #f8f9fa;
+  padding-bottom: 2rem;
 }
 
 .beneficts-section__title {

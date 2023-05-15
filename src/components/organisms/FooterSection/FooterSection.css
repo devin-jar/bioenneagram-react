@@ -3,7 +3,7 @@
 /* Estilos para el contenido del footer */
 .footer-section__content {
   display: flex; /* Cambiado a 'display: flex' para alinear elementos en línea */
-  justify-content: space-between; /* Centrar elementos horizontalmente */
+  justify-content: center; /* Centrar elementos horizontalmente */
   flex-wrap: wrap;
 
   padding: 2rem;
@@ -15,7 +15,6 @@
 }
 
 .footer-section__cta{
-  margin-right: 2.5rem;
   display: flex;
   align-items: center;
 }
@@ -66,20 +65,15 @@
   }
 }
 
-/* @media (min-width: 480px) {
-  .services-section__solution-cards-container{
-    width: 26rem;
-    margin-right: 4rem;
-  }
-}
-
 @media (min-width: 768px) {
-  .services-section__solution-cards-container{
-    width: 32rem;
+  
+  .footer-section__content {
+    justify-content: space-between; /* Centrar elementos horizontalmente */
   }
+
+  .footer-section__cta{
+    margin-right: 2.5rem;
+  }
+
   
 }
-
-@media (min-width: 1024px) {
-
-} */

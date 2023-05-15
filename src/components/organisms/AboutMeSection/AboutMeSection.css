@@ -1,5 +1,6 @@
 .about-me-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: #f8f9fa;
@@ -7,6 +8,7 @@
 
 .about-me-section__image {
   flex: 1;
+  margin-bottom: 2rem;
 }
 
 .about-me-section__image img {
@@ -23,7 +25,7 @@
 .about-me-section__content {
   display: flex;  
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   flex: 2;
   padding-left: 20px;
 }
@@ -40,9 +42,30 @@
 }
 
 .about-me-section__description {
-  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  text-align: -webkit-center;
 }
 
-.about-me-section__btn {
-  /* Agrega estilos para el botón según tus necesidades */
+
+@media (min-width: 480px) {
+
+  .about-me-section {
+    flex-direction: row;
+  }
+
+  .about-me-section__content {
+    align-items: flex-start;
+  }
+
+  .about-me-section__description {
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+
 }

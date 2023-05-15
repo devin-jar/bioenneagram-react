@@ -48,9 +48,13 @@
   
 }
 
-.contact-section__contact-item img{
+.contact-section__contact-item em img{
   width: 2.5rem;
   
+}
+
+img.social-networks__image.contact-section__social-networks-image {
+  width: 1.4rem;
 }
 
 .contact-section__contact-item p{
@@ -62,7 +66,7 @@
   margin: 0;
 }
 
-.contact-section__contact-description p:first-child {
+.contact-section__contact-description > p {
   text-align: center;
   text-decoration: none;
   width: min-content;
@@ -80,6 +84,14 @@
   align-items: center;
   height: 4.5rem;
   justify-content: space-between;
+}
+
+.contact-section__contact-cta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: -webkit-fill-available;
+    justify-content: center;
 }
 
 
