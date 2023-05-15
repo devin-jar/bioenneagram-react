@@ -5,7 +5,7 @@
 
 .img-fluid {
    width: 100%;
-   min-height: 85vh;
+   min-height: 80vh;
   object-fit: cover;
   object-position: center 28%;
   opacity: 95%;

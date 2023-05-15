@@ -22,24 +22,34 @@ export const ServicesSection = () => {
         <div className="services-section__solution-cards-container">
           {/* Renderizamos las tarjetas de producto */}
           {services.map((card, index) => (
-            <div
-              key={index}
-              className={`services-section__card ${
-                currentImage === card.img
-                  ? "services-section__card--selected"
-                  : ""
-              }`}
-              data-imagen={card.img}
-              onClick={() => handleImageChange(card.img)}
-            >
-              <div className="services-section__card-image">
-                <div className="services-section__card-logo">
-                  <img src={card.logo} alt={card.logoDescription} />
+            <div key={index} className="services-section__card-container">
+              <div
+                className={`services-section__card ${
+                  currentImage === card.img
+                    ? "services-section__card--selected"
+                    : ""
+                }`}
+                data-imagen={card.img}
+                onClick={() => handleImageChange(card.img)}
+              >
+                <div className="services-section__card-image">
+                  <div className="services-section__card-logo">
+                    <img src={card.logo} alt={card.logoDescription} />
+                  </div>
+                </div>
+                <div className="services-section__card-information">
+                  <h4 className="services-section__card-title">{card.title}</h4>
+                  <p className="services-section__card-detail">{card.detail}</p>
                 </div>
               </div>
-              <div className="services-section__card-information">
-                <h4 className="services-section__card-title">{card.title}</h4>
-                <p className="services-section__card-detail">{card.detail}</p>
+              <div
+                className={
+                  handleImageChange
+                    ? "services-section__solution-cards-img-mobile"
+                    : ""
+                }
+              >
+                <img src={currentImage} alt="Imagen seleccionada" />
               </div>
             </div>
           ))}
