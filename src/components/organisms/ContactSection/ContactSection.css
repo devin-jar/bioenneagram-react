@@ -53,6 +53,11 @@
   
 }
 
+.contact-section__social-networks-item{
+  list-style: none;
+  width: -webkit-fill-available;
+}
+
 img.social-networks__image.contact-section__social-networks-image {
   width: 1.4rem;
 }
