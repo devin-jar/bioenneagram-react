@@ -23,12 +23,11 @@ export const ContactSection = () => {
                   </em>
                   <div className="contact-section__contact-description">
                     <p>{description}</p>
-                    {console.log("type cta ", content.length)}
                     <div className="contact-section__contact-cta">
                       {content.length !== 0 ? (
                         content.map(
                           ({ id, img, icon, imgDescription, href }) => (
-                            <a
+                            <li
                               key={id}
                               href={href}
                               className="social-networks__item contact-section__social-networks-item"
@@ -40,7 +39,7 @@ export const ContactSection = () => {
                                 alt={imgDescription}
                                 className="social-networks__image contact-section__social-networks-image"
                               />
-                            </a>
+                            </li>
                           )
                         )
                       ) : (
