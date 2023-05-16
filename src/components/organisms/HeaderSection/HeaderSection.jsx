@@ -50,11 +50,11 @@ export const HeaderSection = ({ sections }) => {
             </ul>
 
             {/* TODO: Hacer Componente de la molecula btn*/}
-            <div className="cta ">
+            <div className="navbar__cta ">
               <a
                 target="_blank"
                 href="https://api.whatsapp.com/send/?phone=573004481819&text=Hola%2C+me+gustar%C3%ADa+agendar+un+espacio+contigo&type=phone_number&app_absent=0"
-                className="button btn btn-primary"
+                className="navbar__cta-link button btn btn-primary"
               >
                 Reserva Ahora
               </a>

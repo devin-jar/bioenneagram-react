@@ -15,6 +15,7 @@ export const contactPoints = [
     icon: iconSmartPhone,
     iconDescription: "",
     content: [],
+    className: "call",
   },
   {
     description: "Chatea conmigo",
@@ -23,6 +24,7 @@ export const contactPoints = [
     icon: iconMessage,
     iconDescription: "",
     content: [],
+    className: "type",
   },
   {
     description: "Consultorio",
@@ -31,6 +33,7 @@ export const contactPoints = [
     icon: iconMap,
     iconDescription: "",
     content: [],
+    className: "location",
   },
   {
     description: "Contactame por redes sociales",
@@ -39,6 +42,7 @@ export const contactPoints = [
     icon: iconVolume,
     iconDescription: "",
     content: socialNetworks,
+    className: "social-network",
   },
   {
     description: "Dejame saber tus comentarios",
@@ -47,5 +51,6 @@ export const contactPoints = [
     icon: iconForm,
     iconDescription: "",
     content: [],
+    className: "comment",
   },
 ];

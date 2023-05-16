@@ -13,11 +13,23 @@ export const ContactSection = () => {
         <div className="contact-section__contact-information-content">
           {contactPoints.map(
             (
-              { description, cta, href, icon, iconDescription, content },
+              {
+                description,
+                cta,
+                href,
+                icon,
+                iconDescription,
+                content,
+                className,
+              },
               id
             ) => (
               <div className="contact-section__contact-item" key={id}>
-                <a href={href} target="_blank">
+                <a
+                  href={href}
+                  target="_blank"
+                  className={`contact-section__${className}-button`}
+                >
                   <em>
                     <img src={icon} alt={iconDescription} />
                   </em>
@@ -26,11 +38,18 @@ export const ContactSection = () => {
                     <div className="contact-section__contact-cta">
                       {content.length !== 0 ? (
                         content.map(
-                          ({ id, img, icon, imgDescription, href }) => (
+                          ({
+                            id,
+                            img,
+                            icon,
+                            imgDescription,
+                            href,
+                            className,
+                          }) => (
                             <li
                               key={id}
                               href={href}
-                              className="social-networks__item contact-section__social-networks-item"
+                              className={`contact-section__social-network-${className} social-networks__item contact-section__social-networks-item `}
                               target="_blank"
                             >
                               {icon}

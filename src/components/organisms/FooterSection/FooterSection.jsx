@@ -14,7 +14,7 @@ export const FooterSection = () => {
         <div className="cta footer-section__cta">
           <a
             href="https://meetings.hubspot.com/bioenneagramcoach"
-            className="button btn btn-outline-primary"
+            className="footer-section__link-hubspot button btn btn-outline-primary"
           >
             Agenda tu cita
           </a>
@@ -31,21 +31,23 @@ export const FooterSection = () => {
           </span>
         </div>
         <ul className="social-networks footer-section__social-networks">
-          {socialNetworks.map(({ id, img, icon, imgDescription, href }) => (
-            <a
-              key={id}
-              href={href}
-              className="social-networks__item footer-section__social-networks-item"
-              target="_blank"
-            >
-              {icon}
-              <img
-                src={img}
-                alt={imgDescription}
-                className="social-networks__image footer-section__social-networks-image"
-              />
-            </a>
-          ))}
+          {socialNetworks.map(
+            ({ id, img, icon, imgDescription, href, className }) => (
+              <a
+                key={id}
+                href={href}
+                className={`footer-section__social-network-${className} social-networks__item footer-section__social-networks-item `}
+                target="_blank"
+              >
+                {icon}
+                <img
+                  src={img}
+                  alt={imgDescription}
+                  className="social-networks__image footer-section__social-networks-image"
+                />
+              </a>
+            )
+          )}
         </ul>
       </div>
     </section>

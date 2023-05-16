@@ -31,11 +31,11 @@ export const MainSection = () => {
           Descubre tus fortalezas, debilidades y como mejorar tus relaciones
           personales
         </p>
-        <div className="cta">
+        <div className="main-section__cta">
           <a
             target="_blank"
             href="https://api.whatsapp.com/send/?phone=573004481819&text=Hola%2C+me+gustar%C3%ADa+agendar+un+espacio+contigo&type=phone_number&app_absent=0"
-            className="button btn btn-primary"
+            className="main-section__cta-link button btn btn-primary"
           >
             !Quiero saber más!
           </a>
