@@ -1,5 +1,9 @@
 /* FooterSection.css */
 
+.footer-section {
+  padding: 20px;
+}
+
 /* Estilos para el contenido del footer */
 .footer-section__content {
   display: flex; /* Cambiado a 'display: flex' para alinear elementos en línea */
@@ -22,6 +26,7 @@
 .footer-section__logo{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer-section__logo-copyright{

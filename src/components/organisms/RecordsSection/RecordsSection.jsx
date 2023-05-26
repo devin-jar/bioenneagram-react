@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { records } from "../../../data";
 import ReactPlayer from "react-player";
+import { records } from "../../../data";
 import "./RecordsSection.css";
 import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Navigation, Pagination]);
 
 export const RecordsSection = () => {
-  const [youtubeLink, setYoutubeLink] = useState("");
+  const [currentVideo, setCurrentVideo] = useState("");
+
+  const handleVideoClick = (videoLink) => {
+    setCurrentVideo(videoLink);
+  };
 
   return (
     <section id="records" className="records-section">
@@ -37,11 +41,11 @@ export const RecordsSection = () => {
             <div className="records-section__card">
               <div className="records-section__content-container">
                 <figure className="records-section__image-container">
-                  {/* Cambiar <img> por <ReactPlayer> */}
                   <ReactPlayer
                     url={testimonio.videoLink}
                     width="100%"
                     height="100%"
+                    playing={currentVideo === testimonio.videoLink}
                   />
                 </figure>
                 <div className="records-section__content">
@@ -52,13 +56,12 @@ export const RecordsSection = () => {
                     </p>
                   </div>
                   <div>
-                    <a
-                      href="#"
+                    <button
                       className="btn btn-primary"
-                      onClick={() => setYoutubeLink(testimonio.videoLink)}
+                      onClick={() => handleVideoClick(testimonio.videoLink)}
                     >
                       Ver Video
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

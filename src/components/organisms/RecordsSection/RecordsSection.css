@@ -32,7 +32,7 @@ padding: 20px;
   justify-content: space-between;
   padding: 1rem;
   border-radius: 5%;
-  min-height: 28rem;
+  min-height: fit-content;
 }
 
 .records-section__image-container{
@@ -50,9 +50,12 @@ padding: 20px;
 
 .record-section__title {
   /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  display: flex;
   font-size: 1.5rem;
   font-weight: bold;
   color: #000;
   text-align: center;
   min-height: 4rem;
+  justify-content: center;
+  align-items: center;
 }
