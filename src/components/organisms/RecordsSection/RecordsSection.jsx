@@ -1,13 +1,16 @@
+import React, { useState } from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { records } from "../../../data";
-
+import ReactPlayer from "react-player";
 import "./RecordsSection.css";
 import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Navigation, Pagination]);
 
 export const RecordsSection = () => {
+  const [youtubeLink, setYoutubeLink] = useState("");
+
   return (
     <section id="records" className="records-section">
       <h3 className="records-section__title">
@@ -34,22 +37,29 @@ export const RecordsSection = () => {
             <div className="records-section__card">
               <div className="records-section__content-container">
                 <figure className="records-section__image-container">
-                  <img
-                    src={testimonio.image}
-                    alt={testimonio.name}
-                    className="records-section__image"
+                  {/* Cambiar <img> por <ReactPlayer> */}
+                  <ReactPlayer
+                    url={testimonio.videoLink}
+                    width="100%"
+                    height="100%"
                   />
                 </figure>
-                <div className="records-section__text-container">
-                  <h2 className="records-section__title">{testimonio.name}</h2>
-                  <p className="records-section__description">
-                    {testimonio.description}
-                  </p>
-                </div>
-                <div>
-                  <a href="#" className="btn btn-primary">
-                    Ver Video
-                  </a>
+                <div className="records-section__content">
+                  <div className="records-section__text-container">
+                    <h2 className="record-section__title">{testimonio.name}</h2>
+                    <p className="records-section__description">
+                      {testimonio.description}
+                    </p>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      className="btn btn-primary"
+                      onClick={() => setYoutubeLink(testimonio.videoLink)}
+                    >
+                      Ver Video
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

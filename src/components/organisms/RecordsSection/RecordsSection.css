@@ -18,8 +18,7 @@ padding: 20px;
 }
 
 .records-section__card{
-  
-  margin: 2rem;
+  margin: 0.5rem;
   margin-top: 3.5rem;
 }
 
@@ -30,7 +29,30 @@ padding: 20px;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   border-radius: 5%;
+  min-height: 23rem;
 }
 
+.records-section__image-container{
+  width: auto;
+}
+
+.records-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  min-height: 10.5rem;
+}
+
+.record-section__title {
+  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  min-height: 4rem;
+}

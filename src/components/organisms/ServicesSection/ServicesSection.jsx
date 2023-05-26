@@ -56,11 +56,14 @@ export const ServicesSection = () => {
         </div>
 
         <div className="services-section__solution-cards-img">
-          <img
-            id="services-section__show-img"
-            src={currentImage}
-            alt="Imagen seleccionada"
-          />
+          <picture>
+            <source srcSet={currentImage} media="(min-width: 768px)" />
+            <img
+              id="services-section__show-img"
+              src={currentImage}
+              alt="Imagen seleccionada"
+            />
+          </picture>
         </div>
       </div>
     </section>

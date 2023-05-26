@@ -13,6 +13,7 @@ import {
 
 export const services = [
   {
+    imgSource: imgService01,
     img: imgService01,
     imgDescription: "conferencias",
     logo: iconGroup,
@@ -21,6 +22,7 @@ export const services = [
     detail: "texto",
   },
   {
+    imgSource: imgService02,
     img: imgService02,
     imgDescription: "terapias",
     logo: iconTherapy,
@@ -29,6 +31,7 @@ export const services = [
     detail: "texto",
   },
   {
+    imgSource: imgService03,
     img: imgService03,
     imgDescription: "cursos online",
     logo: iconLearn,
@@ -37,6 +40,7 @@ export const services = [
     detail: "texto",
   },
   {
+    imgSource: imgService04,
     img: imgService04,
     imgDescription: "talleres",
     logo: iconWorkshop,
