@@ -6,46 +6,51 @@ import {
 } from "../assets/icons";
 import {
   imgService01,
+  imgService01Desk,
   imgService02,
   imgService03,
+  imgService03Desk,
   imgService04,
+  imgService04Desk,
 } from "../assets/images";
 
 export const services = [
   {
-    imgSource: imgService01,
+    imgDesk: imgService01Desk,
     img: imgService01,
     imgDescription: "conferencias",
     logo: iconGroup,
     logoDescription: "icon group",
     title: "Conferencias",
-    detail: "texto",
+    detail:
+      "Basadas en la teoria de los 3 cerebros y adaptadas a tus necesidades",
   },
   {
-    imgSource: imgService02,
+    imgDesk: imgService02,
     img: imgService02,
     imgDescription: "terapias",
     logo: iconTherapy,
     logoDescription: "icon two persons talking",
     title: "Terapias",
-    detail: "texto",
+    detail:
+      "Descubre las razones detrás de tu realidad actual y las posibilidades para transformarla",
   },
   {
-    imgSource: imgService03,
+    imgDesk: imgService03Desk,
     img: imgService03,
     imgDescription: "cursos online",
     logo: iconLearn,
     logoDescription: "icon group",
     title: "Cursos online",
-    detail: "texto",
+    detail: "Aprende sobre el funcionamiento de tu cerebro",
   },
   {
-    imgSource: imgService04,
+    imgDesk: imgService04Desk,
     img: imgService04,
     imgDescription: "talleres",
     logo: iconWorkshop,
     logoDescription: "icon group",
     title: "Talleres",
-    detail: "texto",
+    detail: "Explora el poder de tu mente",
   },
 ];

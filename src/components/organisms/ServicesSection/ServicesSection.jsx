@@ -6,10 +6,13 @@ import "./ServicesSection.css";
 export const ServicesSection = () => {
   // Estado para guardar la ruta de la imagen actual
   const [currentImage, setCurrentImage] = useState(services[0].img);
+  const [currentImageDesk, setCurrentImageDesk] = useState(services[0].imgDesk);
 
   // Función para actualizar la ruta de la imagen actual
   const handleImageChange = (ruta) => {
     setCurrentImage(ruta);
+    setCurrentImageDesk(ruta);
+    console.log("url desk", currentImageDesk);
   };
 
   return (
@@ -56,14 +59,11 @@ export const ServicesSection = () => {
         </div>
 
         <div className="services-section__solution-cards-img">
-          <picture>
-            <source srcSet={currentImage} media="(min-width: 768px)" />
-            <img
-              id="services-section__show-img"
-              src={currentImage}
-              alt="Imagen seleccionada"
-            />
-          </picture>
+          <img
+            id="services-section__show-img"
+            src={currentImageDesk}
+            alt="Imagen seleccionada"
+          />
         </div>
       </div>
     </section>
