@@ -33,7 +33,7 @@ export const services = [
     logoDescription: "icon two persons talking",
     title: "Terapias",
     detail:
-      "Descubre las razones detrás de tu realidad actual y las posibilidades para transformarla",
+      "Descubre las razones por las cuales estás viviendo lo que estás viviendo",
   },
   {
     imgDesk: imgService03Desk,
