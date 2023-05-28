@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ReactPlayer from "react-player";
+import YouTube from "react-youtube";
 import { records } from "../../../data";
 import "./RecordsSection.css";
 import "swiper/swiper-bundle.css";
@@ -11,8 +11,8 @@ SwiperCore.use([Navigation, Pagination]);
 export const RecordsSection = () => {
   const [currentVideo, setCurrentVideo] = useState("");
 
-  const handleVideoClick = (videoLink) => {
-    setCurrentVideo(videoLink);
+  const handleVideoClick = (videoId) => {
+    setCurrentVideo(videoId);
   };
 
   return (
@@ -41,13 +41,22 @@ export const RecordsSection = () => {
             <div className="records-section__card">
               <div className="records-section__content-container">
                 <figure className="records-section__image-container">
-                  <ReactPlayer
-                    url={record.videoLink}
-                    width="100%"
-                    height="100%"
-                    playing={currentVideo === record.videoLink}
-                    controls // Agregado para mostrar controles de reproducción
-                  />
+                  {currentVideo === record.id ? (
+                    <YouTube
+                      videoId={record.id}
+                      className="youtube-player"
+                      opts={{
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                  ) : (
+                    <img
+                      src={`https://img.youtube.com/vi/${record.thumbnail}/0.jpg`}
+                      alt={record.name}
+                      className="video-thumbnail"
+                    />
+                  )}
                 </figure>
                 <div className="records-section__content">
                   <div className="records-section__text-container">
@@ -59,7 +68,7 @@ export const RecordsSection = () => {
                   <div className="records-section__buttons-container">
                     <button
                       className="btn btn-primary"
-                      onClick={() => handleVideoClick(record.videoLink)}
+                      onClick={() => handleVideoClick(record.id)}
                     >
                       Reproducir
                     </button>
@@ -67,7 +76,6 @@ export const RecordsSection = () => {
                       href={record.videoLink}
                       target="_blank"
                       className="btn btn-primary"
-                      rel="noopener noreferrer"
                     >
                       Ver Video
                     </a>
