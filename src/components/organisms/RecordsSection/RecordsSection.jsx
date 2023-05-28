@@ -51,11 +51,13 @@ export const RecordsSection = () => {
                       }}
                     />
                   ) : (
-                    <img
-                      src={`https://img.youtube.com/vi/${record.thumbnail}/0.jpg`}
-                      alt={record.name}
-                      className="video-thumbnail"
-                    />
+                    <div className="records-section__thumbnail">
+                      <img
+                        src={`https://img.youtube.com/vi/${record.id}/0.jpg`}
+                        alt={record.name}
+                        className="records-section__thumbnail-image"
+                      />
+                    </div>
                   )}
                 </figure>
                 <div className="records-section__content">

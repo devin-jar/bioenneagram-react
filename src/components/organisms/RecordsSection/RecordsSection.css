@@ -1,23 +1,20 @@
-
 .records-section {
-  /* Agrega estilos de margen, padding, color de fondo, etc. según tus necesidades */
-padding: 20px;
+  padding: 20px;
   background-color: #f8f9fa;
 }
 
 .records-section__title {
-  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
   font-size: 36px;
   font-weight: bold;
   color: #000;
   text-align: center;
 }
 
-.records-section__title-highlight{
+.records-section__title-highlight {
   color: #0094b7;
 }
 
-.records-section__card{
+.records-section__card {
   margin: 0.5rem;
   margin-top: 3.5rem;
 }
@@ -35,8 +32,19 @@ padding: 20px;
   min-height: fit-content;
 }
 
-.records-section__image-container{
+.records-section__image-container {
   width: auto;
+}
+
+.records-section__thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.records-section__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .records-section__content {
@@ -49,7 +57,6 @@ padding: 20px;
 }
 
 .record-section__title {
-  /* Agrega estilos de fuente, tamaño, color, etc. según tus necesidades */
   display: flex;
   font-size: 1.5rem;
   font-weight: bold;
@@ -60,6 +67,6 @@ padding: 20px;
   align-items: center;
 }
 
-.records-section__buttons-container button{
+.records-section__buttons-container button {
   margin-right: 1rem;
 }
