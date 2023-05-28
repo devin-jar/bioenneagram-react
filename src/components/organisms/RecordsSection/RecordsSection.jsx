@@ -36,32 +36,39 @@ export const RecordsSection = () => {
         }}
         className="records-section__cards-container"
       >
-        {records.map((testimonio) => (
-          <SwiperSlide key={testimonio.id}>
+        {records.map((record) => (
+          <SwiperSlide key={record.id}>
             <div className="records-section__card">
               <div className="records-section__content-container">
                 <figure className="records-section__image-container">
                   <ReactPlayer
-                    url={testimonio.videoLink}
+                    url={record.videoLink}
                     width="100%"
                     height="100%"
-                    playing={currentVideo === testimonio.videoLink}
+                    playing={currentVideo === record.videoLink}
                   />
                 </figure>
                 <div className="records-section__content">
                   <div className="records-section__text-container">
-                    <h2 className="record-section__title">{testimonio.name}</h2>
+                    <h2 className="record-section__title">{record.name}</h2>
                     <p className="records-section__description">
-                      {testimonio.description}
+                      {record.description}
                     </p>
                   </div>
-                  <div>
+                  <div className="records-section__buttons-container">
                     <button
                       className="btn btn-primary"
-                      onClick={() => handleVideoClick(testimonio.videoLink)}
+                      onClick={() => handleVideoClick(record.videoLink)}
+                    >
+                      Reproducir
+                    </button>
+                    <a
+                      href={record.videoLink}
+                      target="_blank"
+                      className="btn btn-primary"
                     >
                       Ver Video
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

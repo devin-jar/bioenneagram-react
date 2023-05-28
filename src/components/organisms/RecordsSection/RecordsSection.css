@@ -59,3 +59,7 @@ padding: 20px;
   justify-content: center;
   align-items: center;
 }
+
+.records-section__buttons-container button{
+  margin-right: 1rem;
+}

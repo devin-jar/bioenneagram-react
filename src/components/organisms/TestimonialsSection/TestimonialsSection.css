@@ -97,11 +97,6 @@
   height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la proporción de la imagen */
 }
 
-
-.testimonials-section__text-container {
-  /* Estilos para el contenedor del texto */
-}
-
 .testimonials-section__brain {
   /* Estilos para el nombre del cliente */
   margin: 0;
@@ -115,4 +110,6 @@
 
 img.testimonials-section__image {
   padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
 }
