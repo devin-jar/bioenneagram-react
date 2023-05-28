@@ -18,31 +18,6 @@
 
 /* -- ====================SOLUTIONS================== -- */
 
-
-.services-section__solution-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 62px;
-  gap: 50px;
-  
-}
-
-.services-section__subtitle{
-  
-  height: 54px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.25rem;
-  display: flex;
-  align-items: center;
-}
-
-.services-section__subtitle span{
-  color: #0094B7;
-}
-
 .services-section__solution-information{
   display: flex;
   flex-direction: column;

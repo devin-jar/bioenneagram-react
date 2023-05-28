@@ -15,14 +15,3 @@ nav{
 .navbar-collapse {
   text-align: -webkit-center;
 }
-
-#navbarNav div.cta{
-  margin-top: 1.5rem;
-}
-
-@media (min-width: 992px){
-  #navbarNav div.cta{
-    margin-left: 2.5rem;
-    margin-top: 0;
-  }
-}

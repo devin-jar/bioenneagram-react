@@ -1,5 +1,4 @@
 import { beneficts } from "../../../data/beneficts";
-import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./BenefictsSection.css";
