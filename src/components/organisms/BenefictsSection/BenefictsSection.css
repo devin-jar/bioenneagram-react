@@ -50,8 +50,8 @@
   /* Agrega estilos de tamaño, borde, margen, etc. según tus necesidades */
   margin: 2rem;
   transform: scale(0.5);
-  width: auto;
-  height: auto;
+  width: 8rem;
+  height: 8rem;
 }
 
 .beneficts-section__text {
