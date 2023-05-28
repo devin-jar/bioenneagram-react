@@ -78,6 +78,7 @@
   align-self: center;
   margin-top: 0.5rem;
   border-radius: 0.5rem;
+  height: 100%;
 }
 
 .services-section__card-image{

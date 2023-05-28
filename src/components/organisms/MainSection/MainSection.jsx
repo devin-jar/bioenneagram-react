@@ -15,7 +15,7 @@ export const MainSection = () => {
           <img
             src={imgBackgroundMainSmall}
             alt="Fondo Principal"
-            className="background-image img-fluid"
+            className="background-image"
           />
         </picture>
       </figure>
