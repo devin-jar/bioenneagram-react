@@ -32,20 +32,20 @@ export const FooterSection = () => {
         </div>
         <ul className="social-networks footer-section__social-networks">
           {socialNetworks.map(
-            ({ id, img, icon, imgDescription, href, className }) => (
-              <a
-                key={id}
-                href={href}
-                className={`footer-section__social-network-${className} social-networks__item footer-section__social-networks-item `}
-                target="_blank"
-              >
-                {icon}
-                <img
-                  src={img}
-                  alt={imgDescription}
-                  className="social-networks__image footer-section__social-networks-image"
-                />
-              </a>
+            ({ id, img, imgDescription, href, className }) => (
+              <li key={id} className="social-networks__item">
+                <a
+                  href={href}
+                  className={`footer-section__social-network-${className} footer-section__social-networks-item `}
+                  target="_blank"
+                >
+                  <img
+                    src={img}
+                    alt={imgDescription}
+                    className="social-networks__image footer-section__social-networks-image"
+                  />
+                </a>
+              </li>
             )
           )}
         </ul>

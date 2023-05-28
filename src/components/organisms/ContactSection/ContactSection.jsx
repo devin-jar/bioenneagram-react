@@ -55,27 +55,20 @@ export const ContactSection = () => {
                       <ul className="contact-section__contact-cta">
                         {content.length !== 0 ? (
                           content.map(
-                            ({
-                              id,
-                              img,
-                              icon,
-                              imgDescription,
-                              href,
-                              className,
-                            }) => (
-                              <a
-                                key={id}
-                                href={href}
-                                className={`contact-section__social-network-${className} social-networks__item contact-section__social-networks-item `}
-                                target="_blank"
-                              >
-                                {icon}
-                                <img
-                                  src={img}
-                                  alt={imgDescription}
-                                  className="social-networks__image contact-section__social-networks-image"
-                                />
-                              </a>
+                            ({ id, img, imgDescription, href, className }) => (
+                              <li key={id} className="social-networks__item">
+                                <a
+                                  href={href}
+                                  className={`contact-section__social-network-${className} contact-section__social-networks-item `}
+                                  target="_blank"
+                                >
+                                  <img
+                                    src={img}
+                                    alt={imgDescription}
+                                    className="social-networks__image contact-section__social-networks-image"
+                                  />
+                                </a>
+                              </li>
                             )
                           )
                         ) : (
