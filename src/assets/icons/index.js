@@ -19,6 +19,9 @@ import iconPhone from "./phone-call.svg";
 import iconSmartPhone from "./smartphone.svg";
 import iconVolume from "./volume-2.svg";
 import iconForm from "./form.svg";
+import iconHeart from "./heart.png";
+import iconBrain from "./brain.png";
+import iconBody from "./body.png";
 
 export {
   logoAlex,
@@ -42,4 +45,7 @@ export {
   iconSmartPhone,
   iconVolume,
   iconForm,
+  iconBody,
+  iconBrain,
+  iconHeart,
 };

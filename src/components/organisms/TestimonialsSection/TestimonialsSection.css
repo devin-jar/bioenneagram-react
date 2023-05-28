@@ -18,10 +18,6 @@
   color: #0094b7;
 }
 
-
-.swiper-button-next, .swiper-button-prev{
-}
-
 .testimonials-section__cards-container {
   /* Estilos para el contenedor de las cards de testimonios */
   display: flex;
@@ -83,6 +79,8 @@
 .testimonials-section__image-container {
   /* Estilos para el contenedor de la imagen */
   margin-right: 1rem; /* Agregar margen derecho para separarlo del contenido de texto */
+  border-radius: 50%;
+  background-color: #0094b7;
 }
 
 .testimonials-section__image {
@@ -113,4 +111,8 @@
 .testimonials-section__name {
   /* Estilos para el nombre del cliente */
   margin: 0;
+}
+
+img.testimonials-section__image {
+  padding: 0.5rem;
 }

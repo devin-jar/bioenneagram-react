@@ -9,7 +9,7 @@ import { socialNetworks } from "./socialNetworks";
 
 export const contactPoints = [
   {
-    description: "Llamame",
+    description: "Llámame",
     cta: "+57 300 448 1819",
     href: "tel:+573004481819",
     icon: iconSmartPhone,
@@ -19,7 +19,7 @@ export const contactPoints = [
   },
   {
     description: "Chatea conmigo",
-    cta: "Escribeme",
+    cta: "Escríbeme",
     href: "https://api.whatsapp.com/send/?phone=573004481819&text=Hola%2C+me+gustar%C3%ADa+agendar+un+espacio+contigo&type=phone_number&app_absent=0",
     icon: iconMessage,
     iconDescription: "",
@@ -28,7 +28,7 @@ export const contactPoints = [
   },
   {
     description: "Consultorio",
-    cta: "Ubicame",
+    cta: "Ubícame",
     href: "https://goo.gl/maps/Zw139zUs4rSwnGUQ7",
     icon: iconMap,
     iconDescription: "",
@@ -46,7 +46,7 @@ export const contactPoints = [
   },
   {
     description: "Dejame saber tus comentarios",
-    cta: "Comentame",
+    cta: "Coméntame",
     href: "https://forms.gle/H1dRuGBHvAGP9hy3A",
     icon: iconForm,
     iconDescription: "",
