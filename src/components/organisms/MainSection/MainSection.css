@@ -3,12 +3,13 @@
   display: flex;
 }
 
-.img-fluid {
+.background-image {
    width: 100%;
    min-height: 24rem;
   object-fit: cover;
   object-position: center 28%;
   opacity: 95%;
+  height: 100%;
 }
 
 .main-section__content {
