@@ -9,7 +9,7 @@ import imgService03 from "./ads-intro-enneagram-03.png";
 import imgService03Desk from "./ads-intro-enneagram-04.png";
 import imgService04 from "./service-3.jpg";
 import imgService04Desk from "./service-3.jpg";
-import imgPhotoProfile from "./photoProfile.png";
+import imgPhotoProfile from "./photoProfile.avif";
 
 export {
   imgBackgroundMain,

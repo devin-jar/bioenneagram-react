@@ -3,8 +3,6 @@ import {
   imgBackgroundMainMedium,
   imgBackgroundMainSmall,
 } from "../../../assets/images";
-import { Button } from "../../atoms/Button";
-
 import "./MainSection.css";
 
 export const MainSection = () => {

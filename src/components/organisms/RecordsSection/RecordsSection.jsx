@@ -46,6 +46,7 @@ export const RecordsSection = () => {
                     width="100%"
                     height="100%"
                     playing={currentVideo === record.videoLink}
+                    controls // Agregado para mostrar controles de reproducción
                   />
                 </figure>
                 <div className="records-section__content">
@@ -66,6 +67,7 @@ export const RecordsSection = () => {
                       href={record.videoLink}
                       target="_blank"
                       className="btn btn-primary"
+                      rel="noopener noreferrer"
                     >
                       Ver Video
                     </a>
