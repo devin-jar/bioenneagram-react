@@ -37,8 +37,8 @@
 
 .beneficts-section__item em{
   /* Agrega estilos de margen, padding, alineación, etc. según tus necesidades */
-  width: 120px;
-    height: 120px;
+  width: 7.5rem;
+    height: 7.5rem;
     background-color: #0094B7;
     border-radius: 50%;
     display: flex;
@@ -50,6 +50,8 @@
   /* Agrega estilos de tamaño, borde, margen, etc. según tus necesidades */
   margin: 2rem;
   transform: scale(0.5);
+  width: auto;
+  height: auto;
 }
 
 .beneficts-section__text {

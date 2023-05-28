@@ -76,6 +76,7 @@
 
 img.social-networks__image.contact-section__social-networks-image {
   width: 1.4rem;
+  height: auto;
 }
 
 .contact-section__contact-item p{

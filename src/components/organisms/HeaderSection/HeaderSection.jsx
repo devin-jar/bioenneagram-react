@@ -17,7 +17,7 @@ export const HeaderSection = ({ sections }) => {
           {/* TODO: Hacer Componente del logo*/}
           <div className="logo">
             <a className="navbar-brand" href="#">
-              <img src={logoAlex} alt="logo-marca" />
+              <img src={logoAlex} alt="bioennegram-marca" />
             </a>
           </div>
           <button

@@ -24,7 +24,7 @@ export const FooterSection = () => {
       <div className="footer-section__content-social-network">
         <div className="logo footer-section__logo">
           <a className="navbar-brand" href="#">
-            <img src={logoAlex} alt="logo-marca" />
+            <img src={logoAlex} alt="bioennegram-marca" />
           </a>
           <span className="footer-section__logo-copyright">
             © 2023 BioenneagramCoach Derechos Reservados
