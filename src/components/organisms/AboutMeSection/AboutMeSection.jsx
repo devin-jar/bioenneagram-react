@@ -32,7 +32,7 @@ export const AboutMeSection = () => {
         >
           Escribeme
         </a>
-        <Swiper
+        {/* <Swiper
           spaceBetween={20}
           slidesPerView={1}
           navigation
@@ -67,7 +67,7 @@ export const AboutMeSection = () => {
               </em>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </div>
     </section>
   );
