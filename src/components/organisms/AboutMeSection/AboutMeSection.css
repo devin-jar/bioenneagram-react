@@ -45,6 +45,12 @@
   text-align: -webkit-center;
 }
 
+.about-me-section__certifications-swiper{
+  margin: 0;
+  margin-top: 2rem;
+  width: 30rem;
+}
+
 
 @media (min-width: 480px) {
 

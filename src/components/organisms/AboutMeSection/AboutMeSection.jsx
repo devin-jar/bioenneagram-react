@@ -1,6 +1,10 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import "./AboutMeSection.css";
+import "swiper/swiper-bundle.css";
 
 import { imgPhotoProfile } from "../../../assets/images";
+import { certifications } from "../../../data/certifications";
 
 export const AboutMeSection = () => {
   return (
@@ -28,6 +32,42 @@ export const AboutMeSection = () => {
         >
           Escribeme
         </a>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            364: {
+              slidesPerView: 2,
+            },
+            480: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          className="about-me-section__certifications-swiper"
+        >
+          {certifications.map(({ img, imgDescription }, id) => (
+            <SwiperSlide
+              key={id}
+              className="about-me-section__certification-slide"
+            >
+              <em>
+                <img
+                  src={img}
+                  alt={imgDescription}
+                  className="about-me-section__certification-image"
+                />
+              </em>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

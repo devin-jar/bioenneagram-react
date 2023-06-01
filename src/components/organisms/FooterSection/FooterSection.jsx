@@ -27,7 +27,11 @@ export const FooterSection = () => {
             <img src={logoAlex} alt="bioennegram-marca" />
           </a>
           <span className="footer-section__logo-copyright">
-            © 2023 BioenneagramCoach Derechos Reservados
+            © 2023 BioenneagramCoach Derechos Reservados |<br />
+            Desarrollado por{" "}
+            <a href="https://www.linkedin.com/in/juanca8313/" target="_blank">
+              Camilo Arcila
+            </a>
           </span>
         </div>
         <ul className="social-networks footer-section__social-networks">
