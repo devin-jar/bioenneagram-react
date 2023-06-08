@@ -62,7 +62,7 @@ export const RecordsSection = () => {
                 </figure>
                 <div className="records-section__content">
                   <div className="records-section__text-container">
-                    <h2 className="record-section__title">{record.name}</h2>
+                    <h5 className="record-section__title">{record.name}</h5>
                     <p className="records-section__description">
                       {record.description}
                     </p>

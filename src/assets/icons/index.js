@@ -1,4 +1,4 @@
-import logoAlex from "./logo-alexander-zapata.svg";
+import logoAlex from "./bioenneagram-coach-logo.svg";
 import iconGroup from "./group.svg";
 import iconTherapy from "./therapy.svg";
 import iconLearn from "./learn.svg";

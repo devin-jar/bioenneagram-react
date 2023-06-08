@@ -55,6 +55,7 @@
   flex-direction: column;
   justify-content: start;
   padding: 1.5rem 2rem;
+  padding-bottom: 1rem;
   min-height: fit-content;
   background-color: #dadbdd;
   border-radius: 10px;
@@ -64,6 +65,26 @@
 	transition: all 0.2s ease-in-out;
 
 }
+
+.services-section__card-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+
+
+a.services-section__card-cta.btn-outline-primary {
+  background-color: white;
+  margin-top: 0.5rem;
+}
+
+.services-section__card:not(.services-section__card--selected) a.services-section__card-cta.btn-outline-primary {
+  background-color: #dadbdd;
+  margin-top: 0.5rem;
+}
+
 
 .services-section__solution-cards-img-mobile{
   display: none;
@@ -84,7 +105,13 @@
 .services-section__card-image{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.services-section__card.services-section__card--selected .services-section__card-logo {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.2rem;
 }
 
 .services-section__card-image img{
@@ -95,6 +122,7 @@
 
 .services-section__card.services-section__card--selected {
   background-color: #4A74B1;
+  color: white;
 }
 
 .services-section__solution-cards-img{
@@ -150,7 +178,7 @@ p.services-section__card-detail {
     display: flex;
   }
 
-  .services-section__card{
+  .services-section__card-content{
     flex-direction: row;
     text-align: left;
   }

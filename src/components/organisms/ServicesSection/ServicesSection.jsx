@@ -35,14 +35,28 @@ export const ServicesSection = () => {
                 data-imagen={card.img}
                 onClick={() => handleImageChange(card.img)}
               >
-                <div className="services-section__card-image">
-                  <div className="services-section__card-logo">
-                    <img src={card.logo} alt={card.logoDescription} />
+                <div className="services-section__card-content">
+                  <div className="services-section__card-image">
+                    <div className="services-section__card-logo">
+                      <img src={card.logo} alt={card.logoDescription} />
+                    </div>
+                  </div>
+                  <div className="services-section__card-information">
+                    <h4 className="services-section__card-title">
+                      {card.title}
+                    </h4>
+                    <p className="services-section__card-detail">
+                      {card.detail}
+                    </p>
                   </div>
                 </div>
-                <div className="services-section__card-information">
-                  <h4 className="services-section__card-title">{card.title}</h4>
-                  <p className="services-section__card-detail">{card.detail}</p>
+                <div className="services-section__card-container-cta">
+                  <a
+                    href="#"
+                    className="services-section__card-cta button btn btn-outline-primary"
+                  >
+                    Conoce más
+                  </a>
                 </div>
               </div>
               <div
