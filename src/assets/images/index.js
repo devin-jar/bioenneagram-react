@@ -10,6 +10,9 @@ import imgService03Desk from "./ads-intro-enneagram-04.png";
 import imgService04 from "./service-3.jpg";
 import imgService04Desk from "./service-3.jpg";
 import imgPhotoProfile from "./photoProfile.avif";
+import imgCoursesThumbnail from "./courses_thumbnail.avif";
+import imgPortatil from "./portatil.jpg";
+import imgTherapyInvidual from "./therapy_one.avif";
 
 export {
   imgBackgroundMain,
@@ -24,4 +27,7 @@ export {
   imgService04,
   imgService04Desk,
   imgPhotoProfile,
+  imgCoursesThumbnail,
+  imgPortatil,
+  imgTherapyInvidual,
 };

@@ -1,5 +1,9 @@
-import { LandingPage } from "./components/pages/LandingPage/LandingPage";
+import { Outlet } from "react-router-dom";
 
 export const BioenWebSiteApp = () => {
-  return <LandingPage />;
+  return (
+    <>
+      <Outlet />
+    </>
+  );
 };

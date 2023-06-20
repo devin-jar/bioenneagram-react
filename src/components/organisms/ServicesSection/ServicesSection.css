@@ -81,8 +81,10 @@ a.services-section__card-cta.btn-outline-primary {
 }
 
 .services-section__card:not(.services-section__card--selected) a.services-section__card-cta.btn-outline-primary {
-  background-color: #dadbdd;
+  background-color: #4A74B1;
+  color: white;
   margin-top: 0.5rem;
+  border: black;
 }
 
 

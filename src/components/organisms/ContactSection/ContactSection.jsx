@@ -35,7 +35,7 @@ export const ContactSection = () => {
                       <img src={icon} alt={iconDescription} />
                     </em>
                     <div className="contact-section__contact-description">
-                      <p>{description}</p>
+                      {/* <p>{description}</p> */}
                       <div className="contact-section__contact-cta">
                         <p>{cta}</p>
                       </div>

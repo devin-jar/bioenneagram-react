@@ -2,6 +2,7 @@ import { useState } from "react";
 import { services } from "../../../data";
 
 import "./ServicesSection.css";
+import { Link } from "react-router-dom";
 
 export const ServicesSection = () => {
   // Estado para guardar la ruta de la imagen actual
@@ -18,8 +19,8 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="services-section">
       <h3 className="services-section__title">
-        ¿Listo para{" "}
-        <span className="services-section__title-highlight">Comenzar</span>?
+        Cultiva tu{" "}
+        <span className="services-section__title-highlight">Felicidad</span>
       </h3>
       <div className="services-section__solution-information">
         <div className="services-section__solution-cards-container">
@@ -51,12 +52,12 @@ export const ServicesSection = () => {
                   </div>
                 </div>
                 <div className="services-section__card-container-cta">
-                  <a
-                    href="#"
+                  <Link
                     className="services-section__card-cta button btn btn-outline-primary"
+                    to={"servicios"}
                   >
                     Conoce más
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div

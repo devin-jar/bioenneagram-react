@@ -5,6 +5,8 @@ import {
   iconWorkshop,
 } from "../assets/icons";
 import {
+  imgCoursesThumbnail,
+  imgPortatil,
   imgService01,
   imgService01Desk,
   imgService02,
@@ -12,22 +14,13 @@ import {
   imgService03Desk,
   imgService04,
   imgService04Desk,
+  imgTherapyInvidual,
 } from "../assets/images";
 
 export const services = [
   {
-    imgDesk: imgService01Desk,
-    img: imgService01,
-    imgDescription: "conferencias",
-    logo: iconGroup,
-    logoDescription: "icon group",
-    title: "Conferencias",
-    detail:
-      "Basadas en la teoria de los 3 cerebros y adaptadas a tus necesidades",
-  },
-  {
-    imgDesk: imgService02,
-    img: imgService02,
+    imgDesk: imgTherapyInvidual,
+    img: imgTherapyInvidual,
     imgDescription: "terapias",
     logo: iconTherapy,
     logoDescription: "icon two persons talking",
@@ -36,8 +29,8 @@ export const services = [
       "Descubre las razones por las cuales estás viviendo lo que estás viviendo",
   },
   {
-    imgDesk: imgService03Desk,
-    img: imgService03,
+    imgDesk: imgCoursesThumbnail,
+    img: imgCoursesThumbnail,
     imgDescription: "cursos online",
     logo: iconLearn,
     logoDescription: "icon group",
@@ -52,5 +45,15 @@ export const services = [
     logoDescription: "icon group",
     title: "Talleres",
     detail: "Explora el poder de tu mente",
+  },
+  {
+    imgDesk: imgService01Desk,
+    img: imgService01,
+    imgDescription: "conferencias",
+    logo: iconGroup,
+    logoDescription: "icon group",
+    title: "Conferencias",
+    detail:
+      "Basadas en la teoria de los 3 cerebros y adaptadas a tus necesidades",
   },
 ];

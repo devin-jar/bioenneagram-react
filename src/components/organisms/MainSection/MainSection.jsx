@@ -39,6 +39,13 @@ export const MainSection = () => {
           </a>
         </div>
       </div>
+      <a
+        href="https://api.whatsapp.com/send/?phone=573004481819&text=Hola%2C+me+gustar%C3%ADa+agendar+un+espacio+contigo&type=phone_number&app_absent=0"
+        className="float"
+        target="_blank"
+      >
+        <i className="fa fa-whatsapp my-float"></i>
+      </a>
       <div className="main-section__background"></div>
     </section>
   );
