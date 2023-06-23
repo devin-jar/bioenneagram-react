@@ -60,6 +60,7 @@
 .certifications{
   display: flex;
   height: 6rem;
+  justify-content: center;
 }
 
 .swiper-wrapper-certifications {
@@ -78,9 +79,17 @@
   animation-direction: alternate;
 }
 
-
 .slider-certification {
   padding: 1rem;
+}
+
+.slider-certification img{
+  width: 5rem;
+}
+
+li.slider-certification img {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 @keyframes swiper-certifications {

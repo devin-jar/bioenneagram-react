@@ -10,11 +10,14 @@ import {
   ContactSection,
 } from "../../organisms";
 import { sections } from "../../../data";
+import { NextLaunch } from "../../organisms/NextLaunch/NextLaunch";
 
 export const ServicesPage = () => {
   return (
     <>
-      <h1>Servicios dfs</h1>
+      <NextLaunch />
+      <ContactSection />
+      <FooterSection />
     </>
   );
 };

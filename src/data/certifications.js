@@ -1,18 +1,20 @@
+import {
+  imgAceLogo,
+  imgMasterTrainer,
+  imgNeurofacilitadorSello,
+} from "../assets/images";
+
 export const certifications = [
   {
-    img: "Inicio",
+    img: imgMasterTrainer,
     imgDescription: "certificación a la asociación colombiana de eneagrama",
   },
   {
-    img: "Inicio",
+    img: imgNeurofacilitadorSello,
     imgDescription: "certificación de neurofacilitador",
   },
   {
-    img: "Inicio",
+    img: imgAceLogo,
     imgDescription: "certificación a la asociación internacional de eneagrama",
-  },
-  {
-    img: "Inicio",
-    imgDescription: "certificación de master trainer en eneagrama",
   },
 ];

@@ -15,6 +15,7 @@ import {
   imgService04,
   imgService04Desk,
   imgTherapyInvidual,
+  imgWorkshop,
 } from "../assets/images";
 
 export const services = [
@@ -38,8 +39,8 @@ export const services = [
     detail: "Aprende sobre el funcionamiento de tu cerebro",
   },
   {
-    imgDesk: imgService04Desk,
-    img: imgService04,
+    imgDesk: imgWorkshop,
+    img: imgWorkshop,
     imgDescription: "talleres",
     logo: iconWorkshop,
     logoDescription: "icon group",

@@ -13,7 +13,7 @@ export const ServicesSection = () => {
   const handleImageChange = (ruta) => {
     setCurrentImage(ruta);
     setCurrentImageDesk(ruta);
-    console.log("url desk", currentImageDesk);
+    // console.log("url desk", currentImageDesk);
   };
 
   return (
